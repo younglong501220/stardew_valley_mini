@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    background-color: #1a1009;
+  }
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace, sans-serif;
+}
+
+/* Stardew Valley Wooden Panel Styling */
+.stardew-wood-box {
+  background: #d4a373;
+  border: 4px solid #6f3b14;
+  box-shadow: inset 3px 3px 0 #faedcd, inset -3px -3px 0 #4a2810, 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.stardew-wood-dark {
+  background: #3e2723;
+  border: 3px solid #2b170c;
+  box-shadow: inset 2px 2px 0 #5d4037, inset -2px -2px 0 #1a0c06;
+}
+
+.stardew-slot-btn {
+  background: #faedcd;
+  border: 3px solid #854d0e;
+  box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #b45309;
+  transition: all 0.1s ease-out;
+}
+
+.stardew-slot-btn:hover {
+  background: #fefae0;
+}
+
+.stardew-slot-btn.active {
+  background: #ffffff;
+  border-color: #e11d48;
+  box-shadow: 0 0 0 2px #fb7185, inset 2px 2px 0 #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Custom Scrollbar for Inventory & Shop */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #4a2810;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 4px;
+  border: 1px solid #6f3b14;
+}
+
